@@ -1,0 +1,66 @@
+{
+    "resourceType": "AllergyIntolerance",
+    "id": "1b4bc492-4009-4923-bec4-050ca6a17d3f",
+    "meta": {
+        "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance",
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "1b4bc492-4009-4923-bec4-050ca6a17d3f"
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                "code": "active",
+                "display": "Active"
+            }
+        ]
+    },
+    "verificationStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+                "code": "confirmed",
+                "display": "Confirmed"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "219084006",
+                "display": "Adverse reaction to tetanus vaccine"
+            }
+        ],
+        "text": "Adverse reaction to tetanus vaccine"
+    },
+    "patient": {
+        "reference": "urn:uuid:71cdc187-b9ab-490e-8f25-80e6f642cbb0"
+    },
+    "onsetDateTime": "2024-09-30T11:27:51.492776+01:00",
+    "recordedDate": "2024-11-19T11:27:51.4927845+00:00",
+    "reaction": [
+        {
+            "manifestation": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "725119006",
+                            "display": "Generalised rash"
+                        }
+                    ],
+                    "text": "Generalised rash"
+                }
+            ],
+            "severity": "moderate"
+        }
+    ]
+}
