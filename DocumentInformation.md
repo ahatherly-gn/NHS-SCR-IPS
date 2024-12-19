@@ -26,7 +26,7 @@ This is a set of demographics for the patient. Where the patient has multiple ve
    * [Patient (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
 
 Example:
-* [Example FHIR Patient](Examples\Patient.json)
+* [Example FHIR Patient](Examples/Patient.json)
 
 ## Author
 
