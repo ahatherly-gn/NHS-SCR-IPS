@@ -12,8 +12,7 @@ The composition is the overarching document which provides the context, and grou
 
 Example:
 * [Example FHIR Composition]()
-* [Example Narrative](Examples/Narrative-Composition.html)
-    ([Rendered](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Composition.html))
+* [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Composition.html)
 
 NOTE: The composition sections each include narrative for the section - examples of this narrative for each section are described in the relevant sections of this specification for each IPS section.
 
@@ -27,7 +26,7 @@ This is a set of demographics for the patient. Where the patient has multiple ve
    * [Patient (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
 
 Example:
-* [Example FHIR Patient]()
+* [Example FHIR Patient](Examples\Patient.json)
 
 ## Author
 
