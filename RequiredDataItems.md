@@ -12,6 +12,11 @@ Items recorded as "problems" in local clinical systems (e.g. items on the proble
    * [UKCore-Condition](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Condition?version=2.0.1)
    * [Condition (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
 
+Example:
+
+* [Example FHIR Condition](Examples/Condition.json)
+* [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Problems.html)
+
 ## Allergies and Intolerances
 
 Items recorded as "Allergies" in local clinical systems.

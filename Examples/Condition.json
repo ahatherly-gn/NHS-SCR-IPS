@@ -1,0 +1,51 @@
+{
+    "resourceType": "Condition",
+    "id": "1eb6fd78-d469-4446-8dab-cbf78b1f1bf9",
+    "meta": {
+        "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition",
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+        ]
+    },
+    "identifier": [
+        {
+            "system": "http://test-nhs-scr-ips.com/condition",
+            "value": "1eb6fd78-d469-4446-8dab-cbf78b1f1bf9"
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                    "code": "problem-list-item",
+                    "display": "Problem List Item"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "288920002",
+                "display": "Unable to chew"
+            }
+        ],
+        "text": "Unable to chew"
+    },
+    "subject": {
+        "reference": "urn:uuid:3618c20f-53a4-48ee-ba04-bb60c3785960"
+    },
+    "onsetDateTime": "2024-12-09T10:24:59.0135038+00:00",
+    "recordedDate": "2024-12-17T10:24:59.0135397+00:00"
+}
