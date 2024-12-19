@@ -1,0 +1,17 @@
+{
+    "resourceType": "Device",
+    "id": "5a203ae3-8b0f-4033-8355-22ac32767b8c",
+    "identifier": [
+        {
+            "system": "http://test-nhs-scr-ips.com",
+            "value": "5a203ae3-8b0f-4033-8355-22ac32767b8c"
+        }
+    ],
+    "manufacturer": "Acme Inc",
+    "deviceName": [
+        {
+            "name": "Acme Inc. Shared Care Record",
+            "type": "user-friendly-name"
+        }
+    ]
+}

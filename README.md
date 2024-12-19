@@ -13,4 +13,7 @@ For this specification, the STU2 release (2.0.1) of [UK Core](https://simplifier
  * [Required Data Items](RequiredDataItems.md)
  * [Narrative Content in IPS](NarrativeInIPS.md)
  * [HTML/PDF Representation](HTMLPDF.md)
+ * [API to Generate IPS](API.md)
+ * [Summary Record Pointer in NRL](NRL.md)
  * [Example Summaries](Examples.md)
+ * [Open Questions / Clarifications](OpenQuestions.md)
