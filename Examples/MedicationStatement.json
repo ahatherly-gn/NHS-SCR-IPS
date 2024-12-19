@@ -1,0 +1,79 @@
+{
+    "resourceType": "MedicationStatement",
+    "id": "86245d42-da1d-44ad-90ee-c658bda31cef",
+    "meta": {
+        "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement",
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+        ]
+    },
+    "contained": [
+        {
+            "resourceType": "Medication",
+            "id": "med",
+            "meta": {
+                "profile": [
+                    "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication",
+                    "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
+                ]
+            },
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "42109611000001109",
+                        "display": "Paracetamol 500mg tablets"
+                    }
+                ],
+                "text": "Paracetamol 500mg tablets"
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "86245d42-da1d-44ad-90ee-c658bda31cef"
+        }
+    ],
+    "status": "active",
+    "category": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "outpatient",
+                "display": "Outpatient"
+            }
+        ],
+        "text": "Outpatient"
+    },
+    "medicationReference": {
+        "reference": "#med"
+    },
+    "subject": {
+        "reference": "urn:uuid:66707c11-8aa1-424f-9d80-5d91aad0bcb4"
+    },
+    "effectiveDateTime": "2024-09-30T17:11:53.8808936+01:00",
+    "dateAsserted": "2024-11-19T17:11:53.880899+00:00",
+    "informationSource": {
+        "identifier": {
+            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+            "value": "G7185214"
+        },
+        "display": "The Greenway Practice"
+    },
+    "dosage": [
+        {
+            "text": "Take as needed",
+            "doseAndRate": [
+                {
+                    "doseQuantity": {
+                        "value": 500,
+                        "unit": "milligram",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "mg"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -43,3 +43,14 @@ Current medications being taken. This includes active prescribed medications, in
  * FHIR Resource Profiles to conform to:
    * [UKCore-MedicationStatement](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-MedicationStatement?version=2.0.1)
    * [MedicationStatement (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips)
+
+The details of the actual Medication will be in a FHIR Medication resource. This can either be contained within the MedicationStatement, or included separately in the bundle and referenced from the MedicationStatement.
+
+ * FHIR Resource Profiles to conform to:
+   * [UKCore-Medication](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Medication?version=2.0.1)
+   * [Medication (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips)
+
+Example:
+
+* [Example FHIR MedicationStatement (with Contained Medication)](Examples/MedicationStatement.json)
+* [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Medications.html)
