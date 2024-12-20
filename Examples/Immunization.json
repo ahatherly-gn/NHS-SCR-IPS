@@ -1,0 +1,57 @@
+{
+    "resourceType": "Immunization",
+    "id": "bee6d4bd-86d8-41ae-bd6d-6fa757114b74",
+    "meta": {
+        "profile": [
+            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization",
+            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+        ]
+    },
+    "contained": [
+        {
+            "resourceType": "Organization",
+            "id": "manufacturer",
+            "name": "AstraZeneca"
+        }
+    ],
+    "extension": [
+        {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "1324681000000101",
+                        "display": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+                    }
+                ],
+                "text": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+            }
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://test-nhs-scr-ips.com/immunisation",
+            "value": "bee6d4bd-86d8-41ae-bd6d-6fa757114b74"
+        }
+    ],
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "39114911000001105",
+                "display": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+            }
+        ],
+        "text": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+    },
+    "patient": {
+        "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
+    },
+    "occurrenceDateTime": "2024-06-03T16:13:55.9130709+01:00",
+    "recorded": "2024-06-13T16:13:55.9130767+01:00",
+    "manufacturer": {
+        "reference": "#manufacturer"
+    }
+}

@@ -1,3 +1,5 @@
+# API Implementation
+
 The FHIR IPS Implementation Guide suggests two potential options for how an IPS could be requested:
 
 - Using a $summary operation on the Patient resource

@@ -1,6 +1,6 @@
 {
     "resourceType": "MedicationStatement",
-    "id": "86245d42-da1d-44ad-90ee-c658bda31cef",
+    "id": "ed083a38-ffb5-4f05-ad45-8bbcea6e3934",
     "meta": {
         "profile": [
             "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement",
@@ -27,12 +27,23 @@
                 ],
                 "text": "Paracetamol 500mg tablets"
             }
+        },
+        {
+            "resourceType": "Organization",
+            "id": "source",
+            "identifier": [
+                {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "G7185214"
+                }
+            ],
+            "name": "The Greenway Practice"
         }
     ],
     "identifier": [
         {
             "system": "http://test-nhs-scr-ips.com/allergy",
-            "value": "86245d42-da1d-44ad-90ee-c658bda31cef"
+            "value": "ed083a38-ffb5-4f05-ad45-8bbcea6e3934"
         }
     ],
     "status": "active",
@@ -50,16 +61,12 @@
         "reference": "#med"
     },
     "subject": {
-        "reference": "urn:uuid:66707c11-8aa1-424f-9d80-5d91aad0bcb4"
+        "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
     },
-    "effectiveDateTime": "2024-09-30T17:11:53.8808936+01:00",
-    "dateAsserted": "2024-11-19T17:11:53.880899+00:00",
+    "effectiveDateTime": "2024-10-01T16:13:55.8698501+01:00",
+    "dateAsserted": "2024-11-20T16:13:55.8698553+00:00",
     "informationSource": {
-        "identifier": {
-            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-            "value": "G7185214"
-        },
-        "display": "The Greenway Practice"
+        "reference": "#source"
     },
     "dosage": [
         {
