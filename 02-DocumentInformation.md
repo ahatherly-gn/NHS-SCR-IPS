@@ -33,7 +33,7 @@ Example:
 The expectation is that the summary will be created on-demand by the shared care record, so the author in this case is a "Device" representing the shared care record that generated the summary.
 
 * Filters/Constraints: N/A
- * FHIR Resource Profiles to conform to:
+* FHIR Resource Profiles to conform to:
    * Base FHIR Device Profile
 
 Example:
