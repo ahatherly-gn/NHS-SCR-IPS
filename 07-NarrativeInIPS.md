@@ -10,4 +10,9 @@ But also advises:
 
 Narrative may be created with human intervention, but it is likely that some form of automated generation may be used in most shared care records. The IPS specification does not dictate how this should be done, or what data from the FHIR resources should be considered clinically relevant for inclusion, so this is left for the implemeters to determine. There is however some guidance provided in the IPS specification for areas such as person names and medication lists.
 
-To be completed...
+For the purposes of the Shared Care Record Patient Summary, the narrative components will be populated as follows:
+
+* The demographic information about the patient MUST be populated in the narrative within the Patient resource in the bundle
+* The IPS Composition's narrative section MUST contain the basic data from the composition - including the title, the date the summary was generated, and the author (which will be the name of the shared record that the summary was generated from)
+* The IPS Composition contains a collection of the document sections, each of which has references to the FHIR resources, but also has a textual representation (in the form of HTML) - this MUST hold the human-readable rendering of the key information from the section - typically in the form of a HTML table of the clinical items in the section
+* There is no requirement for any other FHIR resources in the bundle to include narrative content - all relevant information that would be required for human review of the summary is included in the above narrative content
