@@ -21,7 +21,7 @@ Note: This example can be pasted into [this web site](https://www.ipsviewer.com/
 | Immunisations | Immunization | [Example FHIR Immunization](Examples/Immunization.json) | [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Immunisations.html) |
 | Results | DiagnosticReport, Observation | | |
 | History of Procedures | Procedure | | |
-| Medical Devices | Device | | |
+| Medical Devices | Device | N/A | N/A |
 | Advance Directives | | | |
 | Functional Status | | | |
 | History of Pregnancy  | | | |

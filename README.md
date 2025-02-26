@@ -20,3 +20,4 @@ Unless otherwise stated in this specification, all requirements outlined in the 
  10. [Summary Record Pointer in NRL](10-NRL.md)
  11. [Example Summaries](11-Examples.md)
  12. [Open Questions / Clarifications](12-OpenQuestions.md)
+ 13. [Mapping To Urgent Care Dataset](13-MappingToUrgentCareDataset.md)
