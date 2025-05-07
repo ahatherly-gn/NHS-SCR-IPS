@@ -37,9 +37,9 @@ This will be a combination of results that are included in a DiagnosticReport (e
    * [UKCore-Observation-Group-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation-Group-Lab?version=2.0.1)
    * [UKCore-DiagnosticReport](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-DiagnosticReport?version=2.0.1)
    * [UKCore-DiagnosticReport-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-DiagnosticReport-Lab?version=2.0.1)
-   * [Observation Results - Laboratory/Pathology (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips)
-   * [Observation Results - Radiology (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips)
-
+   * [DiagnosticReport (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips)
+   * [Observation Results (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips)
+   
 Example:
 
 * Examples to be added
