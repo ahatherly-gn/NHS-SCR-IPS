@@ -72,7 +72,7 @@ This will be all Procedures in the record with a date in the past.
    * [UKCore-Procedure](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Procedure?version=2.0.1)
    * [Procedure (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips)
 
-Example:
+**Example:**
 
 * Examples to be added
 
@@ -85,6 +85,6 @@ It is unlikely that this information would be held in a shared care record, but 
 * FHIR Resource Profiles to conform to:
    * [Device (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips)
 
-Example:
+**Example:**
 
 * N/A
