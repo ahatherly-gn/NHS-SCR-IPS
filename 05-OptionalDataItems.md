@@ -14,7 +14,23 @@ In addition, this section of the summary could contain any other specific key co
  * FHIR Resource Profiles to conform to:
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: DNAR
+   * PRSB: CIS Legal information
+   * Must have data items:
+      * Advance decision to refuse treatment (ADRT)
+      * Date
+      * OR, Alert flag and associated free text
+   * PRSB: CIS End of life care
+   * Must have data items:
+      * CPR Decision date and time
+      * CPR decision coded value
+      * CPR decision free text
+      * CPR decision date for review
+      * CPR decision location of document
+
+**Example:**
 
 * Examples to be added
 
@@ -28,7 +44,7 @@ Observations containing any functional assessment scores - e.g. Frailty score, R
  * FHIR Resource Profiles to conform to:
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
 
-Example:
+**Example:**
 
 * Examples to be added
 
@@ -46,7 +62,15 @@ Episodes of care that relate to pregnancies - with dates, and any associated obs
    * [Observation Pregnancy - Outcome (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips)
    * [Observation Pregnancy - Status (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Maternity status (no. of weeks pregnant)
+   * PRSB: CIS Pregnancy status
+   * Must have data items:
+      * Pregnancy state - yes/no
+      * Expected delivery date
+
+**Example:**
 
 * Examples to be added
 
@@ -63,8 +87,18 @@ Any active alerts held against the patient. This could include items explicitly 
    * Items in narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [Flag - Alert (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Flag-alert-uv-ips)
-   
-Example:
+
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Safeguarding
+   * PRSB: CIS Safeguarding
+   * Must have data items:
+      * Safeguarding indicator
+      * Safeguarding concerns date
+      * Safeguarding concerns end date
+ * Data Item: Pre- contact information e.g. scene safety
+
+**Example:**
 
 * Examples to be added
 
@@ -79,7 +113,7 @@ Items recorded as "problems" in local clinical systems (e.g. items on the proble
    * [UKCore-Condition](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Condition?version=2.0.1)
    * [Condition (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
 
-Example:
+**Example:**
 
 * Examples to be added
 
@@ -99,7 +133,12 @@ Any observations in the record which relate to smoking or alcohol use.
    * [Observation Social History - Alcohol Use (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips)
    * [Observation Social History - Tobacco Use (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips)
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Social history
+   * PRSB: CIS Social Context
+
+**Example:**
 
 * Examples to be added
 
@@ -118,7 +157,7 @@ Observations from the record with codes that indicate they relate to vital signs
 * FHIR Resource Profiles to conform to:
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
 
-Example:
+**Example:**
 
 * Examples to be added
 
@@ -131,7 +170,19 @@ Flag to indicate if the patient is known to social care
 * FHIR Resource Profiles to conform to:
    * Base FHIR Flag Profile
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Known to Social Care (Current Social Care Support + provider)
+   * PRSB: CIS Services and Care
+   * Must have data items:
+      * Social care package name
+      * Social care package type
+      * Service start date
+      * Service end date
+      * Local authority - coded value
+      * Local authorty - free text
+
+**Example:**
 
 * Examples to be added
 
@@ -145,7 +196,30 @@ Future Encounters (e.g. Acute Waiting Lists), plus the last 6 months of previous
 * FHIR Resource Profiles to conform to:
    * [UKCore-Encounter](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Encounter?version=2.0.1)
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Encounters (Recent - time/event period needs defining)
+   * PRSB: CIS Admission details
+   * Must have data items:
+      * Date of admission
+      * Admitted to  - organisation code
+      * Admitted to - organisation free text
+      * Specialty - activity treatment function code
+      * Specialty - free text
+      * Reason for admission - code
+      * Reason for admission - free text
+      * Legal status on admission - code
+   * PRSB: CIS Discharge details
+   * Must have data items:
+      * Date of discharge
+      * Discharge location - ods code
+      * Discharging specialty - code
+      * Discharging specialty - free text
+      * Legal status on discharge
+      * Discharge destination - code
+      * Discharge destination - address -free text
+
+**Example:**
 
 * Examples to be added
 
@@ -160,6 +234,22 @@ Lasting power of attorney information where this is recorded in the shared recor
    * [UKCore-RelatedPerson](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-RelatedPerson?version=2.0.1)
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: NOK/POA - New Term
+   * PRSB: CIS Legal information
+   * Must have data items:
+      * Lasting Power of Attorney for health and welfare - coded
+      * Location of document
+      * Name of LPA
+      * Contact details
+   * PRSB: CIS Personal Contacts
+   * Must have data items:
+      * Name
+      * Relationship
+      * Relationship type
+      * Contact details
+
+**Example:**
 
 * Examples to be added

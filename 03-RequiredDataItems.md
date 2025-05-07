@@ -13,7 +13,17 @@ Items recorded as "problems" in local clinical systems (e.g. items on the proble
    * [UKCore-Condition](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Condition?version=2.0.1)
    * [Condition (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Conditions (Current active and significant past)
+   * PRSB: CIS Problem List
+   * Must have data items:
+      * Problem - code
+      * Problem - free text
+      * Problem onset date
+      * Problem end date
+
+**Example:**
 
 * [Example FHIR Condition](Examples/Condition.json)
 * [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Problems.html)
@@ -29,7 +39,18 @@ Items recorded as Allergies or Intolerances in local clinical systems.
    * [UKCore-AllergyIntolerance](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-AllergyIntolerance?version=2.0.1)
    * [AllergyIntolerance (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips)
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Allergies
+   * PRSB: CIS Allergies
+   * Must have data items:
+      * Causative agent  - coded value
+      * Causative agent - free text
+      * Type of reaction
+      * Description of reaction - coded value
+      * Description of reaction - free text
+
+**Example:**
 
 * [Example FHIR AllergyIntolerance](Examples/AllergyIntolerance.json)
 * [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Allergies.html)
@@ -51,7 +72,15 @@ The details of the actual Medication will be in a FHIR Medication resource. This
    * [UKCore-Medication](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Medication?version=2.0.1)
    * [Medication (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips)
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Medication (Current GP Meds and Discharge Meds)
+   * PRSB: CIS Medications
+   * Must have data items:
+      * Medication name - coded value
+      * Medication name - free text
+
+**Example:**
 
 * [Example FHIR MedicationStatement](Examples/MedicationStatement.json)
 * [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Medications.html)

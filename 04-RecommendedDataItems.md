@@ -39,8 +39,25 @@ This will be a combination of results that are included in a DiagnosticReport (e
    * [UKCore-DiagnosticReport-Lab](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-DiagnosticReport-Lab?version=2.0.1)
    * [DiagnosticReport (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips)
    * [Observation Results (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips)
-   
-Example:
+
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Diagnostics
+   * PRSB: CIS Investigation Results
+   * Must have data items:
+      * Investigation -coded value
+      * Investigation - free text
+      * Investigation result - coded value
+      * Investigation result - free text
+      * Structured investigation result - value, units of measure, reference ranges, abnormal indicator
+ * Data Item: Observations (Current - time/event period needs defining)
+   * PRSB: CIS Examination findings
+ * Data Item: ECG
+   * PRSB: CIS Investigation Results
+   * Must have data items:
+      * As above for CIS Investigation Results
+
+**Example:**
 
 * Examples to be added
 

@@ -25,7 +25,13 @@ This is a set of demographics for the patient. Where the patient has multiple ve
    * [UKCore-Patient](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Patient?version=2.0.1)
    * [Patient (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
 
-Example:
+**Relevant items from NHSE Urgent Care Dataset**:
+
+ * Data Item: Demographics (National PDS)
+   * PRSB: CIS Demographics
+   * Must have data items: Person first name, Person family name, NHS number, Address lines 1-5 and postcode, Telephone number, Telephone number type
+
+**Example**:
 * [Example FHIR Patient](Examples/Patient.json)
 
 ## Author
@@ -36,7 +42,7 @@ The expectation is that the summary will be created on-demand by the shared care
 * FHIR Resource Profiles to conform to:
    * Base FHIR Device Profile
 
-Example:
+**Example:**
 * [Example FHIR Device](Examples/Author-Device.json)
 
 ## Attester
