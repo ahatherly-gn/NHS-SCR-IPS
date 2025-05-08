@@ -24,6 +24,6 @@ In addition, an implementation may optionally support:
 
 - **Content-Type: application/pdf** - This will return a PDF representation of the summary document
 
-See [this page](HTMLPDF.md) for details of HTML/PDF representations.
+See [this page](08-HTMLPDF.md) for details of HTML/PDF representations.
 
 This approach assumes that there be a single type of summary document made available via this route, which will be the urgent care summary. In future, if there is a requirement for other types of summary, then another type of request/pointer will need to be used, with a separate DocumwentReference lodged in NRL. This may use the $docref approach, with a parameter in the request to specify the type of summary being requested, or it could potentially be supported using different custom operations or parameters into the $summary operation. The details of how this would be implemented are for future consideration and out of scope of this specification.
