@@ -19,5 +19,4 @@ Unless otherwise stated in this specification, all requirements outlined in the 
  9. [API to Generate IPS](09-API.md)
  10. [Summary Record Pointer in NRL](10-NRL.md)
  11. [Example Summaries](11-Examples.md)
- 12. [Open Questions / Clarifications](12-OpenQuestions.md)
- 13. [Mapping To Urgent Care Dataset](13-MappingToUrgentCareDataset.md)
+ 12. [Mapping To Urgent Care Dataset](12-MappingToUrgentCareDataset.md)
