@@ -2,6 +2,8 @@
 
 The below list provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
 
+NOTE - as these sections are mandatory, if no data is provided in any section, [as per the IPS spec](https://build.fhir.org/ig/HL7/fhir-ips/Empty-Sections-and-Missing-Data.html) an "emptyReason" must be provided for the section to assert the absence of data - generally "unavailable" or "notasked". This is not required for recommended or optional sections, which can be omitted.
+
 ## Problems
 
 Items recorded as "problems" in local clinical systems (e.g. items on the problems list in primary care). In addition, where possible, any other coded items from the record that have codes that indicate that they are conditions or disorders.
@@ -60,7 +62,10 @@ Items recorded as Allergies or Intolerances in local clinical systems.
 Current medications being taken. This includes active prescribed medications, including repeat, one-off and acute meds and any meds recorded in other care settings if available.
 
  * Filters/Constraints
-   * Include ALL where status="active"
+   * Current repeat medications
+   * Where possibe:
+     * Discontinued repeat medications from the last year
+     * Acute Medications taken in last year
    * Items in narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [UKCore-MedicationStatement](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-MedicationStatement?version=2.0.1)
@@ -71,6 +76,8 @@ The details of the actual Medication will be in a FHIR Medication resource. This
  * FHIR Resource Profiles to conform to:
    * [UKCore-Medication](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Medication?version=2.0.1)
    * [Medication (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips)
+
+NOTE: The UK Core profile specifies that the "derivedFrom" should be provided, which links the MedicationStatement to the MedicationRequest. For the purposes of a patient summary this is not required, so this relationship can be omitted.
 
 **Relevant items from NHSE Urgent Care Dataset**:
 
