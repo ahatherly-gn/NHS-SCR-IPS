@@ -2,6 +2,8 @@
 
 The below list provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
 
+NOTE - as these sections are mandatory, if no data is provided in any section, [as per the IPS spec](https://build.fhir.org/ig/HL7/fhir-ips/Empty-Sections-and-Missing-Data.html) an "emptyReason" must be provided for the section to assert the absence of data - generally "unavailable" or "notasked". This is not required for recommended or optional sections, which can be omitted.
+
 ## Problems
 
 Items recorded as "problems" in local clinical systems (e.g. items on the problems list in primary care). In addition, where possible, any other coded items from the record that have codes that indicate that they are conditions or disorders.
