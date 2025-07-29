@@ -4,7 +4,9 @@ This is an initial draft of a proposed specification of a shared care record sum
 
 For this specification, the latest STU3 build of [UK Core](https://simplifier.net/guide/UKCoreVersionHistory/Home?version=current) was used for the profiles to apply to resources returned, in combination with those defined in the FHIR International Patient Summary specification.
 
-Unless otherwise stated in this specification, all requirements outlined in the [FHIR International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/index.html) implementation guide should be adhered to. The purpose of this guide is to add additional context and requirements around how this guide is applied to this use-case.
+Unless otherwise stated in this specification, all requirements outlined in the [FHIR International Patient Summary](https://build.fhir.org/ig/HL7/fhir-ips/index.html) implementation guide should be adhered to - specifically version 2.0.0 STU 2.
+
+The purpose of this guide is to add additional context and requirements around how this guide is applied to this use-case.
 
 ## Contents
 
