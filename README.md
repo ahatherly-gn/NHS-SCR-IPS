@@ -10,7 +10,7 @@ The purpose of this guide is to add additional context and requirements around h
 
 ## Contents
 
- 1. [Assumptions](01-Assumptions.md)
+ 1. [General Guidance](01-GeneralGuidance.md)
  2. [Document Information](02-DocumentInformation.md)
  3. [Required Data Items](03-RequiredDataItems.md)
  4. [Recommended Data Items](04-RecommendedDataItems.md)
