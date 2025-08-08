@@ -64,7 +64,7 @@ Current medications being taken. This includes active prescribed medications, in
  * Filters/Constraints
    * Current repeat medications
    * Where possibe:
-     * Discontinued repeat medications from the last year
+     * Discontinued repeat medications from the last 6 months
      * Acute Medications taken in last year
    * Items in narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
