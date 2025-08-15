@@ -4,7 +4,7 @@ The below list provides details of how to populate key items from the urgent car
 
 NOTE - as these sections are mandatory, if no data is provided in any section, [as per the IPS spec](https://build.fhir.org/ig/HL7/fhir-ips/Empty-Sections-and-Missing-Data.html) an "emptyReason" must be provided for the section to assert the absence of data - generally "unavailable" or "notasked". This is not required for recommended or optional sections, which can be omitted.
 
-## Problems
+## Problems (this is accepted guidance)
 
 Items recorded as "problems" in local clinical systems (e.g. items on the problems list in primary care). In addition, where possible, any other coded items from the record that have codes that indicate that they are conditions or disorders.
 
@@ -30,7 +30,7 @@ Items recorded as "problems" in local clinical systems (e.g. items on the proble
 * [Example FHIR Condition](Examples/Condition.json)
 * [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Problems.html)
 
-## Allergies and Intolerances
+## Allergies and Intolerances (this is accepted guidance)
 
 Items recorded as Allergies or Intolerances in local clinical systems.
 
@@ -57,7 +57,7 @@ Items recorded as Allergies or Intolerances in local clinical systems.
 * [Example FHIR AllergyIntolerance](Examples/AllergyIntolerance.json)
 * [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Allergies.html)
 
-## Medication Summary
+## Medication Summary (this is accepted guidance)
 
 Current medications being taken. This includes active prescribed medications, including repeat, one-off and acute meds and any meds recorded in other care settings if available.
 
