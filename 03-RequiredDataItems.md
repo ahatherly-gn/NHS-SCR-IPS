@@ -1,6 +1,6 @@
 # Required Data Items
 
-The below list provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
+The list below provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
 
 NOTE - as these sections are mandatory, if no data is provided in any section, [as per the IPS spec](https://build.fhir.org/ig/HL7/fhir-ips/Empty-Sections-and-Missing-Data.html) an "emptyReason" must be provided for the section to assert the absence of data - generally "unavailable" or "notasked". This is not required for recommended or optional sections, which can be omitted.
 
@@ -10,7 +10,7 @@ Items recorded as "problems" in local clinical systems (e.g. items on the proble
 
  * Filters/Constraints
    * Where there is a status, include only those that are "active"
-   * Items in narrative should be sorted newest to oldest based on recorded date
+   * Items in the narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [UKCore-Condition](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Condition?version=2.0.1)
    * [Condition (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
@@ -36,7 +36,7 @@ Items recorded as Allergies or Intolerances in local clinical systems.
 
  * Filters/Constraints
    * Include ALL where status="active"
-   * Items in narrative should be sorted newest to oldest based on recorded date
+   * Items in the narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [UKCore-AllergyIntolerance](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-AllergyIntolerance?version=2.0.1)
    * [AllergyIntolerance (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips)
@@ -63,10 +63,10 @@ Current medications being taken. This includes active prescribed medications, in
 
  * Filters/Constraints
    * Current repeat medications
-   * Where possibe:
+   * Where possible:
      * Discontinued repeat medications from the last 6 months
-     * Acute Medications taken in last year
-   * Items in narrative should be sorted newest to oldest based on recorded date
+     * Acute Medications taken in the last year
+   * Items in the narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [UKCore-MedicationStatement](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-MedicationStatement?version=2.0.1)
    * [MedicationStatement (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips)
