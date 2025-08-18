@@ -1,10 +1,10 @@
 # Document Information
 
-The below table provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
+The table below provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
 
 ## Composition
 
-The composition is the overarching document which provides the context, and groups the content into sections to represent the sections defined in the IPS specification.
+The composition is the overarching document which provides the context and groups the content into sections to represent the sections defined in the IPS specification.
 
  * Filters/Constraints: N/A
  * FHIR Resource Profiles to conform to:
@@ -47,8 +47,8 @@ The expectation is that the summary will be created on-demand by the shared care
 
 ## Attester
 
-The expectation is that the summary will be created on-demand by the shared care record, so would not have an attester, so this will not be populated.
+The expectation is that the summary will be created on-demand by the shared care record, so it would not have an attester, so this will not be populated.
 
 ## Custodian
 
-Not required as typically the shared record included data from a range of orgnisations, so there is no single custodian.
+Not required, as typically the shared record includes data from a range of organisations, so there is no single custodian.
