@@ -8,7 +8,7 @@ But also advises:
 
 > While no constraints are implemented, early implementers have recommended that IPS documents not duplicate the content contained in Composition.section.text (which is required) in the Composition.text
 
-Narrative may be created with human intervention, but it is likely that some form of automated generation may be used in most shared care records. The IPS specification does not dictate how this should be done, or what data from the FHIR resources should be considered clinically relevant for inclusion, so this is left for the implemeters to determine. There is however some guidance provided in the IPS specification for areas such as person names and medication lists.
+Narrative may be created with human intervention, but it is likely that some form of automated generation may be used in most shared care records. The IPS specification does not dictate how this should be done or what data from the FHIR resources should be considered clinically relevant for inclusion, so this is left for the implementers to determine. There is, however, some guidance provided in the IPS specification for areas such as person names and medication lists.
 
 For the purposes of the Shared Care Record Patient Summary, the narrative components will be populated as follows:
 
@@ -19,9 +19,9 @@ For the purposes of the Shared Care Record Patient Summary, the narrative compon
 * English spellings should be used rather than American-English in narrative sections - i.e. "Immunisation" rather than "Immunization"
 
 Narrative content should be:
-*  **Concise and clinically relevant**: Narratives should summarize the key clinical facts without duplicating all structured data.
+*  **Concise and clinically relevant**: Narratives should summarise the key clinical facts without duplicating all structured data.
 * **Human-readable**: They must be understandable by clinicians without requiring parsing of the underlying FHIR resources.
-* **Synchronized with data**: The data in the narrative must accurately reflect the structured data in the section.
+* **Synchronised with data**: The data in the narrative must accurately reflect the structured data in the section.
 
 ## Best Practices for populating narrative content
 
