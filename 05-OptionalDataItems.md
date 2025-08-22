@@ -3,6 +3,7 @@
 The below table provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
 
 ## Advance Directives
+*(this section is agreed)*
 
 This should be any Observations in the record which relate to the existence of other key document such as EPaCCS forms or ReSPECT forms - these actual documents should be separate pointers on NRL, so should not be replicated into this summary document, rather this should indicate their existence so the user can review and retrieve them separately from NRL.
 
@@ -35,7 +36,7 @@ In addition, this section of the summary could contain any other specific key co
 * Examples to be added
 
 ## Functional Status
-
+*(this section is draft as there's outstanding Observation questions)*
 Observations containing any functional assessment scores - e.g. Frailty score, Rockwood score. Potentially any other coded observations that relate to functional status.
 
 * Filters/Constraints
@@ -49,6 +50,7 @@ Observations containing any functional assessment scores - e.g. Frailty score, R
 * Examples to be added
 
 ## History of Pregnancy 
+*(this section is agreed)*
 
 Episodes of care that relate to pregnancies - with dates, and any associated observations relating to due dates, outcomes and pregancy status.
 
@@ -75,10 +77,12 @@ Episodes of care that relate to pregnancies - with dates, and any associated obs
 * Examples to be added
 
 ## Plan of Care
+*(this section is draft, as there's an outstanding question about whether its should include future appointments)*
 
 Care plan documents should be shared as separate documents with NRL, so shoud not be included in the shared record patient summary document.
 
 ## Alerts
+*(this section is agreed)*
 
 Any active alerts held against the patient. This could include items explicitly created as alerts and any other coded items relating to safeguarding or other items deemed clinically significant enough to flag as alerts.
 
@@ -103,6 +107,7 @@ Any active alerts held against the patient. This could include items explicitly 
 * Examples to be added
 
 ## History of Past Problems
+*(this section is draft, as there's outstanding questions about how much history to include)*
 
 Items recorded as "problems" in local clinical systems (e.g. items on the problems list in primary care) that are not "active"
 
@@ -118,10 +123,12 @@ Items recorded as "problems" in local clinical systems (e.g. items on the proble
 * Examples to be added
 
 ## Patient Story (AKA About Me)
+*(this is agreed)*
 
 About Me documents should be shared as separate documents with NRL, so shoud not be included in the shared record patient summary document.
 
 ## Social History
+*(this section is draft as there's outstanding Observation questions)*
 
 Any observations in the record which relate to smoking or alcohol use.
 
@@ -143,6 +150,7 @@ Any observations in the record which relate to smoking or alcohol use.
 * Examples to be added
 
 ## Vital Signs
+*(this section is draft as there's outstanding Observation questions, such as the quantity of observations to include, and how to say "there may be further Observations")*
 
 Observations from the record with codes that indicate they relate to vital signs.
 
@@ -187,6 +195,7 @@ Flag to indicate if the patient is known to social care
 * Examples to be added
 
 ## Encounters
+*(this section is draft, as it may include future appointments)*
 
 Future Encounters (e.g. Acute Waiting Lists), plus the last 6 months of previous encounters
 
@@ -224,6 +233,7 @@ Future Encounters (e.g. Acute Waiting Lists), plus the last 6 months of previous
 * Examples to be added
 
 ## Legal information (PoA)
+*(this section is agreed)*
 
 Lasting power of attorney information where this is recorded in the shared record. This could either be a related person or an observation that a power of attorney has been appointed
 
