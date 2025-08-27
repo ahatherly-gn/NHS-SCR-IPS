@@ -1,16 +1,16 @@
 # Optional Data Items
 
-The below table provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
+The table below provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
 
 ## Advance Directives
 
-This should be any Observations in the record which relate to the existence of other key document such as EPaCCS forms or ReSPECT forms - these actual documents should be separate pointers on NRL, so should not be replicated into this summary document, rather this should indicate their existence so the user can review and retrieve them separately from NRL.
+This should be any Observations in the record which relate to the existence of other key documents such as EPaCCS forms or ReSPECT forms - these actual documents should be separate pointers on NRL, so should not be replicated into this summary document, rather this should indicate their existence so the user can review and retrieve them separately from NRL.
 
 In addition, this section of the summary could contain any other specific key coded observations from those documents, such as ADRT/CPR decisions.
 
 * Filters/Constraints
    * Observations that relate to advanced directives, or the existence of documents like EPaCCS or ReSPECT forms, etc.
-   * Items in narrative should be sorted newest to oldest based on recorded date
+   * Items in the narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
 
@@ -40,7 +40,7 @@ Observations containing any functional assessment scores - e.g. Frailty score, R
 
 * Filters/Constraints
    * Observations that relate to functional status, or assessment scores relating to functional status
-   * Items in narrative should be sorted newest to oldest based on recorded date
+   * Items in the narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
 
@@ -50,12 +50,12 @@ Observations containing any functional assessment scores - e.g. Frailty score, R
 
 ## History of Pregnancy 
 
-Episodes of care that relate to pregnancies - with dates, and any associated observations relating to due dates, outcomes and pregancy status.
+Episodes of care that relate to pregnancies - with dates, and any associated observations relating to due dates, outcomes and pregnancy status.
 
 * Filters/Constraints
    * Episodes of care that relate to pregnancy episodes
    * Observations with codes that relate to expected due dates, outcomes and pregnancy status
-   * Items in narrative should be sorted newest to oldest based on recorded date
+   * Items in the narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
    * [Observation Pregnancy - Expected Delivery Date (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips)
@@ -76,7 +76,7 @@ Episodes of care that relate to pregnancies - with dates, and any associated obs
 
 ## Plan of Care
 
-Care plan documents should be shared as separate documents with NRL, so shoud not be included in the shared record patient summary document.
+Care plan documents should be shared as separate documents with NRL, so they should not be included in the shared record patient summary document.
 
 ## Alerts
 
@@ -84,7 +84,7 @@ Any active alerts held against the patient. This could include items explicitly 
 
 * Filters/Constraints
    * Flags relating to items explicitly created as "alerts", plus any other items deemed clinically significant - e.g. safeguarding information
-   * Items in narrative should be sorted newest to oldest based on recorded date
+   * Items in the narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [Flag - Alert (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Flag-alert-uv-ips)
 
@@ -96,7 +96,7 @@ Any active alerts held against the patient. This could include items explicitly 
       * Safeguarding indicator
       * Safeguarding concerns date
       * Safeguarding concerns end date
- * Data Item: Pre- contact information e.g. scene safety
+ * Data Item: Pre-contact information, e.g. scene safety
 
 **Example:**
 
@@ -108,7 +108,7 @@ Items recorded as "problems" in local clinical systems (e.g. items on the proble
 
  * Filters/Constraints
    * Include where status is NOT "active"
-   * Items in narrative should be sorted newest to oldest based on recorded date
+   * Items in the narrative should be sorted newest to oldest based on recorded date
  * FHIR Resource Profiles to conform to:
    * [UKCore-Condition](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Condition?version=2.0.1)
    * [Condition (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips)
@@ -119,7 +119,7 @@ Items recorded as "problems" in local clinical systems (e.g. items on the proble
 
 ## Patient Story (AKA About Me)
 
-About Me documents should be shared as separate documents with NRL, so shoud not be included in the shared record patient summary document.
+About Me documents should be shared as separate documents with NRL, so should not be included in the shared record patient summary document.
 
 ## Social History
 
@@ -127,7 +127,7 @@ Any observations in the record which relate to smoking or alcohol use.
 
 * Filters/Constraints
    * Observations with codes that relate to smoking or alcohol use
-   * Items in narrative should be sorted newest to oldest based on recorded date
+   * Items in the narrative should be sorted newest to oldest based on recorded date
 * FHIR Resource Profiles to conform to:
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
    * [Observation Social History - Alcohol Use (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips)
@@ -153,7 +153,7 @@ Observations from the record with codes that indicate they relate to vital signs
      * Heart Rate (last 6 months)
      * Height / Weight / BMI (Latest only)
    * Where this is not possible, limit the data to the last 6 months
-   * Items in narrative should be grouped by type, and within each type, sorted newest to oldest based on recorded date
+   * Items in the narrative should be grouped by type, and within each type, sorted newest to oldest based on recorded date
 * FHIR Resource Profiles to conform to:
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
 
@@ -166,7 +166,7 @@ Observations from the record with codes that indicate they relate to vital signs
 Flag to indicate if the patient is known to social care
 
 * Filters/Constraints
-  * Derived flag to incidate that the patient is known to social care based on data about social care being available in the shared record
+  * Derived flag to indicate that the patient is known to social care based on data about social care being available in the shared record
 * FHIR Resource Profiles to conform to:
    * Base FHIR Flag Profile
 
@@ -180,7 +180,7 @@ Flag to indicate if the patient is known to social care
       * Service start date
       * Service end date
       * Local authority - coded value
-      * Local authorty - free text
+      * Local authority - free text
 
 **Example:**
 
@@ -192,7 +192,7 @@ Future Encounters (e.g. Acute Waiting Lists), plus the last 6 months of previous
 
 * Filters/Constraints
    * Encounter records that have a start date greater than 6 months ago
-   * Items in narrative should be sorted newest to oldest based on start date
+   * Items in the narrative should be sorted newest to oldest based on start date
 * FHIR Resource Profiles to conform to:
    * [UKCore-Encounter](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Encounter?version=2.0.1)
 
@@ -229,7 +229,7 @@ Lasting power of attorney information where this is recorded in the shared recor
 
 * Filters/Constraints
    * RelatedPerson records with a type that indicates they are a Power of Attorney, or any Observations with codes that indicate they relate to power of attorneys
-   * Items in narrative should be sorted newest to oldest based on start date
+   * Items in the narrative should be sorted newest to oldest based on start date
 * FHIR Resource Profiles to conform to:
    * [UKCore-RelatedPerson](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-RelatedPerson?version=2.0.1)
    * [UKCore-Observation](https://simplifier.net/guide/uk-core-implementation-guide-stu2/Home/ProfilesandExtensions/Profile-UKCore-Observation?version=2.0.1)
