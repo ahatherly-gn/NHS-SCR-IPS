@@ -3,6 +3,7 @@
 The below list provides details of how to populate key items from the urgent care data-set into the International Patient Summary FHIR Bundle
 
 ## Immunisations
+*(this section is agreed)*
 
 This will include any Immunisation records - typically from primary care, but can be from other care settings.
 
@@ -18,6 +19,7 @@ Example:
 * [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Immunisations.html)
 
 ## Results
+*(this section is draft & needs confirmation on timeframes for results)*
 
 This will be a combination of results that are included in a DiagnosticReport (e.g. Acute Pathology results), and some individual coded Observations that are not part of a report (e.g. results taken from the GP record)
 
@@ -77,6 +79,7 @@ This will be all Procedures in the record with a date in the past.
 * Examples to be added
 
 ## Medical Devices
+*(this section is agreed)*
 
 It is unlikely that this information would be held in a shared care record, but if it is, it can be included as a list of FHIR Device resources.
 
