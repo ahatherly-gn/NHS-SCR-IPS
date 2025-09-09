@@ -1,16 +1,10 @@
 {
     "resourceType": "Condition",
-    "id": "1eb6fd78-d469-4446-8dab-cbf78b1f1bf9",
-    "meta": {
-        "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition",
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
-        ]
-    },
+    "id": "234a8a63-c312-4145-a06c-dc2844262c58",
     "identifier": [
         {
             "system": "http://test-nhs-scr-ips.com/condition",
-            "value": "1eb6fd78-d469-4446-8dab-cbf78b1f1bf9"
+            "value": "d72d7f08-e856-412e-a7ba-894a1ede5d82"
         }
     ],
     "clinicalStatus": {
@@ -44,8 +38,8 @@
         "text": "Unable to chew"
     },
     "subject": {
-        "reference": "urn:uuid:3618c20f-53a4-48ee-ba04-bb60c3785960"
+        "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
     },
-    "onsetDateTime": "2024-12-09T10:24:59.0135038+00:00",
-    "recordedDate": "2024-12-17T10:24:59.0135397+00:00"
+    "onsetDateTime": "2025-08-30T15:50:12.5221662+01:00",
+    "recordedDate": "2025-09-07T15:50:12.5221796+01:00"
 }

@@ -1,10 +1,10 @@
 {
     "resourceType": "Device",
-    "id": "5a203ae3-8b0f-4033-8355-22ac32767b8c",
+    "id": "720c69ac-f629-4ad6-a4b4-74566e1dc5cc",
     "identifier": [
         {
             "system": "http://test-nhs-scr-ips.com",
-            "value": "5a203ae3-8b0f-4033-8355-22ac32767b8c"
+            "value": "8c60ff23-af96-4467-94ba-1387192bbc58"
         }
     ],
     "manufacturer": "Acme Inc",

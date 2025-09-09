@@ -1,22 +1,10 @@
 {
     "resourceType": "MedicationStatement",
-    "id": "ed083a38-ffb5-4f05-ad45-8bbcea6e3934",
-    "meta": {
-        "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement",
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
-        ]
-    },
+    "id": "be80ee95-5d08-4e61-8f65-237833b0dc2e",
     "contained": [
         {
             "resourceType": "Medication",
             "id": "med",
-            "meta": {
-                "profile": [
-                    "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication",
-                    "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
-                ]
-            },
             "code": {
                 "coding": [
                     {
@@ -43,14 +31,14 @@
     "identifier": [
         {
             "system": "http://test-nhs-scr-ips.com/allergy",
-            "value": "ed083a38-ffb5-4f05-ad45-8bbcea6e3934"
+            "value": "039758cc-ccb5-4bc7-8b61-f4785e414d38"
         }
     ],
     "status": "active",
     "category": {
         "coding": [
             {
-                "system": "http://snomed.info/sct",
+                "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
                 "code": "outpatient",
                 "display": "Outpatient"
             }
@@ -61,10 +49,10 @@
         "reference": "#med"
     },
     "subject": {
-        "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
+        "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
     },
-    "effectiveDateTime": "2024-10-01T16:13:55.8698501+01:00",
-    "dateAsserted": "2024-11-20T16:13:55.8698553+00:00",
+    "effectiveDateTime": "2025-06-21T15:50:12.546944+01:00",
+    "dateAsserted": "2025-08-10T15:50:12.5469472+01:00",
     "informationSource": {
         "reference": "#source"
     },
