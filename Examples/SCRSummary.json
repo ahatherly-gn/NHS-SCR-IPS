@@ -1,786 +1,713 @@
 {
-    "resourceType": "Bundle",
-    "id": "f5c31142-0517-422e-95da-7270647e5007",
-    "meta": {
-        "profile": [
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
+  "resourceType": "Bundle",
+  "id": "ac12b796-d8e7-4a04-9148-4bebf1f06d7c",
+  "identifier": {
+    "system": "http://test-nhs-scr-ips.com",
+    "value": "c60b5f6f-b46d-4de3-bb40-9c6c5011f408"
+  },
+  "type": "document",
+  "timestamp": "2025-09-09T15:50:12.3169718+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:1243627b-2145-491a-af3d-e33324313772",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "1243627b-2145-491a-af3d-e33324313772",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Title:</b> Shared Care Record Patient Summary as at 09/09/2025 15:50:12</p><p><b>Document Type:</b> Patient summary Document</p><p><b>Date:</b> 09/09/2025 15:50:12</p><p><b>Author:</b> Acme Inc. Shared Care Record</p></div>"
+        },
+        "identifier": {
+          "system": "http://test-nhs-scr-ips.com",
+          "value": "a8c03d4f-700d-4fdb-9011-73929cd56e56"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60591-5",
+              "display": "Patient summary Document"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+        },
+        "date": "2025-09-09T15:50:12.3876081+01:00",
+        "author": [
+          {
+            "reference": "urn:uuid:720c69ac-f629-4ad6-a4b4-74566e1dc5cc"
+          }
+        ],
+        "title": "Shared Care Record Patient Summary as at 09/09/2025 15:50:12",
+        "event": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActClass",
+                    "code": "PCPR",
+                    "display": "care provision"
+                  }
+                ],
+                "text": "care provision"
+              }
+            ],
+            "period": {
+              "end": "2025-09-09T15:50:12.5215578+01:00"
+            }
+          }
+        ],
+        "section": [
+          {
+            "title": "Problems",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Problem</th><th>Category</th><th>Onset Date</th><th>Recorded Date</th></tr><tr><td>Unable to chew</td><td>Problem List Item</td><td>30/08/2025 15:50:12</td><td>07/09/2025 15:50:12</td></tr><tr><td>Chronic erythema</td><td>Encounter Diagnosis</td><td>21/07/2025 15:50:12</td><td>26/07/2025 15:50:12</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:234a8a63-c312-4145-a06c-dc2844262c58"
+              },
+              {
+                "reference": "urn:uuid:4ab8cc20-88df-497f-922f-b7b81517532f"
+              }
+            ]
+          },
+          {
+            "title": "Allergies and Intolerances",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Allergy</th><th>Verification Status</th><th>Reaction Manifestation</th><th>Reaction Severity</th><th>Onset Date</th><th>Recorded Date</th></tr><tr><td>Adverse reaction to tetanus vaccine</td><td>Confirmed</td><td>Generalised rash</td><td>Moderate</td><td>21/06/2025 15:50:12</td><td>10/08/2025 15:50:12</td></tr><tr><td>Allergy to dexamethasone</td><td>Confirmed</td><td>NoInformation</td><td>Moderate</td><td>02/01/2025 15:50:12</td><td>12/01/2025 15:50:12</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:7d770ee9-8973-4d7c-af4a-2209753fd1fe"
+              },
+              {
+                "reference": "urn:uuid:29a10c44-ad8a-4c65-8a48-b75654d81da1"
+              }
+            ]
+          },
+          {
+            "title": "Medication Summary",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Medication</th><th>Category</th><th>Source</th><th>Dosage</th><th>Dose Unit</th><th>Dose Value</th><th>Effective Date</th><th>Asserted Date</th></tr><tr><td>Paracetamol 500mg tablets</td><td>Outpatient</td><td></td><td>Take as needed</td><td>milligram</td><td>500</td><td>21/06/2025 15:50:12</td><td>10/08/2025 15:50:12</td></tr><tr><td>Amoxicillin 250mg chewable tablet</td><td>Outpatient</td><td></td><td>Take twice a day</td><td>milligram</td><td>250</td><td>02/01/2025 15:50:12</td><td>12/01/2025 15:50:12</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:be80ee95-5d08-4e61-8f65-237833b0dc2e"
+              },
+              {
+                "reference": "urn:uuid:ede53e37-4fe1-41ed-9433-0da6036837bd"
+              }
+            ]
+          },
+          {
+            "title": "Immunisations",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Immunisation</th><th>Procedure</th><th>Manufacturer</th><th>Effective Date</th><th>Recorded Date</th></tr><tr><td>COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)</td><td>Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine</td><td>AstraZeneca</td><td>21/02/2025 15:50:12</td><td>03/03/2025 15:50:12</td></tr><tr><td>COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)</td><td>Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine</td><td>Pfizer-BioNTech</td><td>01/06/2025 15:50:12</td><td>02/06/2025 15:50:12</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:72ecd48d-d647-41fa-8e03-08a254d0a7db"
+              },
+              {
+                "reference": "urn:uuid:5bf334be-e2b9-4684-b40d-c1264a31c5b7"
+              }
+            ]
+          }
         ]
+      }
     },
-    "identifier": {
-        "system": "http://test-nhs-scr-ips.com",
-        "value": "f5c31142-0517-422e-95da-7270647e5007"
+    {
+      "fullUrl": "urn:uuid:720c69ac-f629-4ad6-a4b4-74566e1dc5cc",
+      "resource": {
+        "resourceType": "Device",
+        "id": "720c69ac-f629-4ad6-a4b4-74566e1dc5cc",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com",
+            "value": "8c60ff23-af96-4467-94ba-1387192bbc58"
+          }
+        ],
+        "manufacturer": "Acme Inc",
+        "deviceName": [
+          {
+            "name": "Acme Inc. Shared Care Record",
+            "type": "user-friendly-name"
+          }
+        ]
+      }
     },
-    "type": "document",
-    "timestamp": "2024-12-20T16:13:55.5573106+00:00",
-    "entry": [
-        {
-            "fullUrl": "urn:uuid:72a8ef18-9eb7-4ab0-92e1-df0dbb024ea2",
-            "resource": {
-                "resourceType": "Composition",
-                "id": "72a8ef18-9eb7-4ab0-92e1-df0dbb024ea2",
-                "meta": {
-                    "profile": [
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"
-                    ]
-                },
-                "text": {
-                    "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Title:</b> Shared Care Record Patient Summary as at 20/12/2024 16:13:55</p><p><b>Document Type:</b> Patient summary Document</p><p><b>Date:</b> 20/12/2024 16:13:55</p><p><b>Author:</b> Acme Inc. Shared Care Record</p></div>"
-                },
-                "identifier": {
-                    "system": "http://test-nhs-scr-ips.com",
-                    "value": "72a8ef18-9eb7-4ab0-92e1-df0dbb024ea2"
-                },
-                "status": "final",
-                "type": {
-                    "coding": [
-                        {
-                            "system": "http://loinc.org",
-                            "code": "60591-5",
-                            "display": "Patient summary Document"
-                        }
-                    ]
-                },
-                "subject": {
-                    "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
-                },
-                "date": "2024-12-20T16:13:55.6558769+00:00",
-                "author": [
+    {
+      "fullUrl": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "92bf81ec-eed1-4105-ab1b-4e9ae84e4443",
+        "identifier": [
+          {
+            "extension": [
+              {
+                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+                "valueCodeableConcept": {
+                  "coding": [
                     {
-                        "reference": "urn:uuid:136be3f5-b2bf-437d-b3c3-c07ba912c5a6"
+                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
+                      "code": "01",
+                      "display": "Number present and verified"
                     }
-                ],
-                "title": "Shared Care Record Patient Summary as at 20/12/2024 16:13:55",
-                "event": [
-                    {
-                        "code": [
-                            {
-                                "coding": [
-                                    {
-                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ActClass",
-                                        "code": "PCPR",
-                                        "display": "care provision"
-                                    }
-                                ],
-                                "text": "care provision"
-                            }
-                        ]
-                    }
-                ],
-                "section": [
-                    {
-                        "title": "Problems",
-                        "code": {
-                            "coding": [
-                                {
-                                    "system": "http://loinc.org",
-                                    "code": "11450-4"
-                                }
-                            ]
-                        },
-                        "text": {
-                            "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Problem</th><th>Category</th><th>Onset Date</th><th>Recorded Date</th></tr><tr><td>Unable to chew</td><td>Problem List Item</td><td>10/12/2024 16:13:55</td><td>18/12/2024 16:13:55</td></tr><tr><td>Chronic erythema</td><td>Encounter Diagnosis</td><td>31/10/2024 16:13:55</td><td>05/11/2024 16:13:55</td></tr></table></div>"
-                        },
-                        "entry": [
-                            {
-                                "reference": "urn:uuid:80c04b13-591f-469d-866c-08252072459d"
-                            },
-                            {
-                                "reference": "urn:uuid:b8305e15-64e4-45b2-9347-498275fb97e9"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Allergies and Intolerances",
-                        "code": {
-                            "coding": [
-                                {
-                                    "system": "http://loinc.org",
-                                    "code": "48765-2"
-                                }
-                            ]
-                        },
-                        "text": {
-                            "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Allergy</th><th>Verification Status</th><th>Reaction Manifestation</th><th>Reaction Severity</th><th>Onset Date</th><th>Recorded Date</th></tr><tr><td>Adverse reaction to tetanus vaccine</td><td>Confirmed</td><td>Generalised rash</td><td>Moderate</td><td>01/10/2024 16:13:55</td><td>20/11/2024 16:13:55</td></tr><tr><td>Allergy to dexamethasone</td><td>Confirmed</td><td>NoInformation</td><td>Moderate</td><td>14/04/2024 16:13:55</td><td>24/04/2024 16:13:55</td></tr></table></div>"
-                        },
-                        "entry": [
-                            {
-                                "reference": "urn:uuid:82ed8615-95ba-4409-9c9c-3baa615e4ecf"
-                            },
-                            {
-                                "reference": "urn:uuid:ee7b50b0-ed41-422c-96c4-42e266997ea2"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Medication Summary",
-                        "code": {
-                            "coding": [
-                                {
-                                    "system": "http://loinc.org",
-                                    "code": "10160-0"
-                                }
-                            ]
-                        },
-                        "text": {
-                            "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Medication</th><th>Category</th><th>Source</th><th>Dosage</th><th>Dose Unit</th><th>Dose Value</th><th>Effective Date</th><th>Asserted Date</th></tr><tr><td>Paracetamol 500mg tablets</td><td>Outpatient</td><td></td><td>Take as needed</td><td>milligram</td><td>500</td><td>01/10/2024 16:13:55</td><td>20/11/2024 16:13:55</td></tr><tr><td>Amoxicillin 250mg chewable tablet</td><td>Outpatient</td><td></td><td>Take twice a day</td><td>milligram</td><td>250</td><td>14/04/2024 16:13:55</td><td>24/04/2024 16:13:55</td></tr></table></div>"
-                        },
-                        "entry": [
-                            {
-                                "reference": "urn:uuid:ed083a38-ffb5-4f05-ad45-8bbcea6e3934"
-                            },
-                            {
-                                "reference": "urn:uuid:3a7ea9a9-af22-413b-a64c-82d27a646f74"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Immunisations",
-                        "code": {
-                            "coding": [
-                                {
-                                    "system": "http://loinc.org",
-                                    "code": "11369-6"
-                                }
-                            ]
-                        },
-                        "text": {
-                            "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><th>Immunisation</th><th>Procedure</th><th>Manufacturer</th><th>Effective Date</th><th>Recorded Date</th></tr><tr><td>COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)</td><td>Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine</td><td>AstraZeneca</td><td>03/06/2024 16:13:55</td><td>13/06/2024 16:13:55</td></tr><tr><td>COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)</td><td>Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine</td><td>Pfizer-BioNTech</td><td>11/09/2024 16:13:55</td><td>12/09/2024 16:13:55</td></tr></table></div>"
-                        },
-                        "entry": [
-                            {
-                                "reference": "urn:uuid:bee6d4bd-86d8-41ae-bd6d-6fa757114b74"
-                            },
-                            {
-                                "reference": "urn:uuid:21db7acf-ea81-42cb-ad74-fe9e78ea4b73"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:136be3f5-b2bf-437d-b3c3-c07ba912c5a6",
-            "resource": {
-                "resourceType": "Device",
-                "id": "136be3f5-b2bf-437d-b3c3-c07ba912c5a6",
-                "identifier": [
-                    {
-                        "system": "http://test-nhs-scr-ips.com",
-                        "value": "136be3f5-b2bf-437d-b3c3-c07ba912c5a6"
-                    }
-                ],
-                "manufacturer": "Acme Inc",
-                "deviceName": [
-                    {
-                        "name": "Acme Inc. Shared Care Record",
-                        "type": "user-friendly-name"
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a",
-            "resource": {
-                "resourceType": "Patient",
-                "id": "72ab37d0-b256-40ce-8b30-84719ed3711a",
-                "meta": {
-                    "profile": [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "extension": [
-                            {
-                                "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
-                                "valueCodeableConcept": {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland",
-                                            "code": "01",
-                                            "display": "Number present and verified"
-                                        }
-                                    ]
-                                }
-                            }
-                        ],
-                        "system": "https://fhir.nhs.uk/Id/nhs-number",
-                        "value": "1234567890"
-                    }
-                ],
-                "name": [
-                    {
-                        "family": "Smith",
-                        "given": [
-                            "John"
-                        ],
-                        "prefix": [
-                            "Mr"
-                        ]
-                    }
-                ],
-                "gender": "male",
-                "birthDate": "1970-01-01",
-                "address": [
-                    {
-                        "line": [
-                            "123 The Street",
-                            "The Town"
-                        ],
-                        "postalCode": "AB12 34C"
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:80c04b13-591f-469d-866c-08252072459d",
-            "resource": {
-                "resourceType": "Condition",
-                "id": "80c04b13-591f-469d-866c-08252072459d",
-                "meta": {
-                    "profile": [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition",
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "system": "http://test-nhs-scr-ips.com/condition",
-                        "value": "80c04b13-591f-469d-866c-08252072459d"
-                    }
-                ],
-                "clinicalStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-                            "code": "active",
-                            "display": "Active"
-                        }
-                    ]
-                },
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                                "code": "problem-list-item",
-                                "display": "Problem List Item"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "288920002",
-                            "display": "Unable to chew"
-                        }
-                    ],
-                    "text": "Unable to chew"
-                },
-                "subject": {
-                    "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
-                },
-                "onsetDateTime": "2024-12-10T16:13:55.8075026+00:00",
-                "recordedDate": "2024-12-18T16:13:55.8075364+00:00"
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:b8305e15-64e4-45b2-9347-498275fb97e9",
-            "resource": {
-                "resourceType": "Condition",
-                "id": "b8305e15-64e4-45b2-9347-498275fb97e9",
-                "meta": {
-                    "profile": [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition",
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "system": "http://test-nhs-scr-ips.com/condition",
-                        "value": "b8305e15-64e4-45b2-9347-498275fb97e9"
-                    }
-                ],
-                "clinicalStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-                            "code": "active",
-                            "display": "Active"
-                        }
-                    ]
-                },
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
-                                "code": "encounter-diagnosis",
-                                "display": "Encounter Diagnosis"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "125116007",
-                            "display": "Chronic erythema"
-                        }
-                    ],
-                    "text": "Chronic erythema"
-                },
-                "subject": {
-                    "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
-                },
-                "onsetDateTime": "2024-10-31T16:13:55.810224+00:00",
-                "recordedDate": "2024-11-05T16:13:55.8102309+00:00"
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:82ed8615-95ba-4409-9c9c-3baa615e4ecf",
-            "resource": {
-                "resourceType": "AllergyIntolerance",
-                "id": "82ed8615-95ba-4409-9c9c-3baa615e4ecf",
-                "meta": {
-                    "profile": [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance",
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "system": "http://test-nhs-scr-ips.com/allergy",
-                        "value": "82ed8615-95ba-4409-9c9c-3baa615e4ecf"
-                    }
-                ],
-                "clinicalStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-                            "code": "active",
-                            "display": "Active"
-                        }
-                    ]
-                },
-                "verificationStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-                            "code": "confirmed",
-                            "display": "Confirmed"
-                        }
-                    ]
-                },
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "219084006",
-                            "display": "Adverse reaction to tetanus vaccine"
-                        }
-                    ],
-                    "text": "Adverse reaction to tetanus vaccine"
-                },
-                "patient": {
-                    "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
-                },
-                "onsetDateTime": "2024-10-01T16:13:55.8256558+01:00",
-                "recordedDate": "2024-11-20T16:13:55.8256644+00:00",
-                "reaction": [
-                    {
-                        "manifestation": [
-                            {
-                                "coding": [
-                                    {
-                                        "system": "http://snomed.info/sct",
-                                        "code": "725119006",
-                                        "display": "Generalised rash"
-                                    }
-                                ],
-                                "text": "Generalised rash"
-                            }
-                        ],
-                        "severity": "moderate"
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:ee7b50b0-ed41-422c-96c4-42e266997ea2",
-            "resource": {
-                "resourceType": "AllergyIntolerance",
-                "id": "ee7b50b0-ed41-422c-96c4-42e266997ea2",
-                "meta": {
-                    "profile": [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-AllergyIntolerance",
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "system": "http://test-nhs-scr-ips.com/allergy",
-                        "value": "ee7b50b0-ed41-422c-96c4-42e266997ea2"
-                    }
-                ],
-                "clinicalStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-                            "code": "active",
-                            "display": "Active"
-                        }
-                    ]
-                },
-                "verificationStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-                            "code": "confirmed",
-                            "display": "Confirmed"
-                        }
-                    ]
-                },
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "294702008",
-                            "display": "Allergy to dexamethasone"
-                        }
-                    ],
-                    "text": "Allergy to dexamethasone"
-                },
-                "patient": {
-                    "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
-                },
-                "onsetDateTime": "2024-04-14T16:13:55.8578292+01:00",
-                "recordedDate": "2024-04-24T16:13:55.8578391+01:00",
-                "reaction": [
-                    {
-                        "manifestation": [
-                            {
-                                "coding": [
-                                    {
-                                        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-                                        "code": "NI",
-                                        "display": "NoInformation"
-                                    }
-                                ],
-                                "text": "NoInformation"
-                            }
-                        ],
-                        "severity": "moderate"
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:ed083a38-ffb5-4f05-ad45-8bbcea6e3934",
-            "resource": {
-                "resourceType": "MedicationStatement",
-                "id": "ed083a38-ffb5-4f05-ad45-8bbcea6e3934",
-                "meta": {
-                    "profile": [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement",
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
-                    ]
-                },
-                "contained": [
-                    {
-                        "resourceType": "Medication",
-                        "id": "med",
-                        "meta": {
-                            "profile": [
-                                "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication",
-                                "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
-                            ]
-                        },
-                        "code": {
-                            "coding": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "42109611000001109",
-                                    "display": "Paracetamol 500mg tablets"
-                                }
-                            ],
-                            "text": "Paracetamol 500mg tablets"
-                        }
-                    },
-                    {
-                        "resourceType": "Organization",
-                        "id": "source",
-                        "identifier": [
-                            {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "G7185214"
-                            }
-                        ],
-                        "name": "The Greenway Practice"
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "http://test-nhs-scr-ips.com/allergy",
-                        "value": "ed083a38-ffb5-4f05-ad45-8bbcea6e3934"
-                    }
-                ],
-                "status": "active",
-                "category": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "outpatient",
-                            "display": "Outpatient"
-                        }
-                    ],
-                    "text": "Outpatient"
-                },
-                "medicationReference": {
-                    "reference": "#med"
-                },
-                "subject": {
-                    "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
-                },
-                "effectiveDateTime": "2024-10-01T16:13:55.8698501+01:00",
-                "dateAsserted": "2024-11-20T16:13:55.8698553+00:00",
-                "informationSource": {
-                    "reference": "#source"
-                },
-                "dosage": [
-                    {
-                        "text": "Take as needed",
-                        "doseAndRate": [
-                            {
-                                "doseQuantity": {
-                                    "value": 500,
-                                    "unit": "milligram",
-                                    "system": "http://unitsofmeasure.org",
-                                    "code": "mg"
-                                }
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:3a7ea9a9-af22-413b-a64c-82d27a646f74",
-            "resource": {
-                "resourceType": "MedicationStatement",
-                "id": "3a7ea9a9-af22-413b-a64c-82d27a646f74",
-                "meta": {
-                    "profile": [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement",
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
-                    ]
-                },
-                "contained": [
-                    {
-                        "resourceType": "Medication",
-                        "id": "med",
-                        "meta": {
-                            "profile": [
-                                "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication",
-                                "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
-                            ]
-                        },
-                        "code": {
-                            "coding": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "370407003",
-                                    "display": "Amoxicillin 250mg chewable tablet"
-                                }
-                            ],
-                            "text": "Amoxicillin 250mg chewable tablet"
-                        }
-                    },
-                    {
-                        "resourceType": "Organization",
-                        "id": "source",
-                        "identifier": [
-                            {
-                                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-                                "value": "G7185214"
-                            }
-                        ],
-                        "name": "The Greenway Practice"
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "http://test-nhs-scr-ips.com/allergy",
-                        "value": "3a7ea9a9-af22-413b-a64c-82d27a646f74"
-                    }
-                ],
-                "status": "active",
-                "category": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "outpatient",
-                            "display": "Outpatient"
-                        }
-                    ],
-                    "text": "Outpatient"
-                },
-                "medicationReference": {
-                    "reference": "#med"
-                },
-                "subject": {
-                    "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
-                },
-                "effectiveDateTime": "2024-04-14T16:13:55.9031785+01:00",
-                "dateAsserted": "2024-04-24T16:13:55.9031883+01:00",
-                "informationSource": {
-                    "reference": "#source"
-                },
-                "dosage": [
-                    {
-                        "text": "Take twice a day",
-                        "doseAndRate": [
-                            {
-                                "doseQuantity": {
-                                    "value": 250,
-                                    "unit": "milligram",
-                                    "system": "http://unitsofmeasure.org",
-                                    "code": "mg"
-                                }
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "fullUrl": "urn:uuid:bee6d4bd-86d8-41ae-bd6d-6fa757114b74",
-            "resource": {
-                "resourceType": "Immunization",
-                "id": "bee6d4bd-86d8-41ae-bd6d-6fa757114b74",
-                "meta": {
-                    "profile": [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization",
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
-                    ]
-                },
-                "contained": [
-                    {
-                        "resourceType": "Organization",
-                        "id": "manufacturer",
-                        "name": "AstraZeneca"
-                    }
-                ],
-                "extension": [
-                    {
-                        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
-                        "valueCodeableConcept": {
-                            "coding": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "1324681000000101",
-                                    "display": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
-                                }
-                            ],
-                            "text": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
-                        }
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "http://test-nhs-scr-ips.com/immunisation",
-                        "value": "bee6d4bd-86d8-41ae-bd6d-6fa757114b74"
-                    }
-                ],
-                "status": "completed",
-                "vaccineCode": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "39114911000001105",
-                            "display": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
-                        }
-                    ],
-                    "text": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
-                },
-                "patient": {
-                    "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
-                },
-                "occurrenceDateTime": "2024-06-03T16:13:55.9130709+01:00",
-                "recorded": "2024-06-13T16:13:55.9130767+01:00",
-                "manufacturer": {
-                    "reference": "#manufacturer"
+                  ]
                 }
+              }
+            ],
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "1234567890"
+          }
+        ],
+        "name": [
+          {
+            "family": "Smith",
+            "given": [
+              "John"
+            ],
+            "prefix": [
+              "Mr"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1970-01-01",
+        "address": [
+          {
+            "line": [
+              "123 The Street",
+              "The Town"
+            ],
+            "postalCode": "AB12 34C"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:234a8a63-c312-4145-a06c-dc2844262c58",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "234a8a63-c312-4145-a06c-dc2844262c58",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/condition",
+            "value": "d72d7f08-e856-412e-a7ba-894a1ede5d82"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
             }
+          ]
         },
-        {
-            "fullUrl": "urn:uuid:21db7acf-ea81-42cb-ad74-fe9e78ea4b73",
-            "resource": {
-                "resourceType": "Immunization",
-                "id": "21db7acf-ea81-42cb-ad74-fe9e78ea4b73",
-                "meta": {
-                    "profile": [
-                        "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization",
-                        "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
-                    ]
-                },
-                "contained": [
-                    {
-                        "resourceType": "Organization",
-                        "id": "manufacturer",
-                        "name": "Pfizer-BioNTech"
-                    }
-                ],
-                "extension": [
-                    {
-                        "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
-                        "valueCodeableConcept": {
-                            "coding": [
-                                {
-                                    "system": "http://snomed.info/sct",
-                                    "code": "1324691000000104",
-                                    "display": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine"
-                                }
-                            ],
-                            "text": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine"
-                        }
-                    }
-                ],
-                "identifier": [
-                    {
-                        "system": "http://test-nhs-scr-ips.com/immunisation",
-                        "value": "21db7acf-ea81-42cb-ad74-fe9e78ea4b73"
-                    }
-                ],
-                "status": "completed",
-                "vaccineCode": {
-                    "coding": [
-                        {
-                            "system": "http://snomed.info/sct",
-                            "code": "39115611000001103",
-                            "display": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)"
-                        }
-                    ],
-                    "text": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)"
-                },
-                "patient": {
-                    "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
-                },
-                "occurrenceDateTime": "2024-09-11T16:13:55.9295764+01:00",
-                "recorded": "2024-09-12T16:13:55.9295805+01:00",
-                "manufacturer": {
-                    "reference": "#manufacturer"
-                }
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "288920002",
+              "display": "Unable to chew"
             }
+          ],
+          "text": "Unable to chew"
+        },
+        "subject": {
+          "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+        },
+        "onsetDateTime": "2025-08-30T15:50:12.5221662+01:00",
+        "recordedDate": "2025-09-07T15:50:12.5221796+01:00"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4ab8cc20-88df-497f-922f-b7b81517532f",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "4ab8cc20-88df-497f-922f-b7b81517532f",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/condition",
+            "value": "9cfdc437-3612-4468-8fb8-269ed3f3fef9"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "encounter-diagnosis",
+                "display": "Encounter Diagnosis"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "125116007",
+              "display": "Chronic erythema"
+            }
+          ],
+          "text": "Chronic erythema"
+        },
+        "subject": {
+          "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+        },
+        "onsetDateTime": "2025-07-21T15:50:12.5244575+01:00",
+        "recordedDate": "2025-07-26T15:50:12.5244613+01:00"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7d770ee9-8973-4d7c-af4a-2209753fd1fe",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "7d770ee9-8973-4d7c-af4a-2209753fd1fe",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "71059e0b-f5bf-4edc-8426-be5c813d3b90"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "219084006",
+              "display": "Adverse reaction to tetanus vaccine"
+            }
+          ],
+          "text": "Adverse reaction to tetanus vaccine"
+        },
+        "patient": {
+          "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+        },
+        "onsetDateTime": "2025-06-21T15:50:12.5321757+01:00",
+        "recordedDate": "2025-08-10T15:50:12.5321796+01:00",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "725119006",
+                    "display": "Generalised rash"
+                  }
+                ],
+                "text": "Generalised rash"
+              }
+            ],
+            "severity": "moderate"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:29a10c44-ad8a-4c65-8a48-b75654d81da1",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "29a10c44-ad8a-4c65-8a48-b75654d81da1",
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "ea72db7a-dffc-40dd-8fc0-fb400411139a"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed",
+              "display": "Confirmed"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "294702008",
+              "display": "Allergy to dexamethasone"
+            }
+          ],
+          "text": "Allergy to dexamethasone"
+        },
+        "patient": {
+          "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+        },
+        "onsetDateTime": "2025-01-02T15:50:12.5428193+00:00",
+        "recordedDate": "2025-01-12T15:50:12.542826+00:00",
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                    "code": "NI",
+                    "display": "NoInformation"
+                  }
+                ],
+                "text": "NoInformation"
+              }
+            ],
+            "severity": "moderate"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:be80ee95-5d08-4e61-8f65-237833b0dc2e",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "be80ee95-5d08-4e61-8f65-237833b0dc2e",
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "med",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "42109611000001109",
+                  "display": "Paracetamol 500mg tablets"
+                }
+              ],
+              "text": "Paracetamol 500mg tablets"
+            }
+          },
+          {
+            "resourceType": "Organization",
+            "id": "source",
+            "identifier": [
+              {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "G7185214"
+              }
+            ],
+            "name": "The Greenway Practice"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "039758cc-ccb5-4bc7-8b61-f4785e414d38"
+          }
+        ],
+        "status": "active",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+              "code": "outpatient",
+              "display": "Outpatient"
+            }
+          ],
+          "text": "Outpatient"
+        },
+        "medicationReference": {
+          "reference": "#med"
+        },
+        "subject": {
+          "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+        },
+        "effectiveDateTime": "2025-06-21T15:50:12.546944+01:00",
+        "dateAsserted": "2025-08-10T15:50:12.5469472+01:00",
+        "informationSource": {
+          "reference": "#source"
+        },
+        "dosage": [
+          {
+            "text": "Take as needed",
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 500,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ede53e37-4fe1-41ed-9433-0da6036837bd",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "ede53e37-4fe1-41ed-9433-0da6036837bd",
+        "contained": [
+          {
+            "resourceType": "Medication",
+            "id": "med",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "370407003",
+                  "display": "Amoxicillin 250mg chewable tablet"
+                }
+              ],
+              "text": "Amoxicillin 250mg chewable tablet"
+            }
+          },
+          {
+            "resourceType": "Organization",
+            "id": "source",
+            "identifier": [
+              {
+                "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                "value": "G7185214"
+              }
+            ],
+            "name": "The Greenway Practice"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/allergy",
+            "value": "e286273f-6bbd-465d-81e8-1393e87bb85a"
+          }
+        ],
+        "status": "active",
+        "category": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+              "code": "outpatient",
+              "display": "Outpatient"
+            }
+          ],
+          "text": "Outpatient"
+        },
+        "medicationReference": {
+          "reference": "#med"
+        },
+        "subject": {
+          "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+        },
+        "effectiveDateTime": "2025-01-02T15:50:12.5584691+00:00",
+        "dateAsserted": "2025-01-12T15:50:12.5584727+00:00",
+        "informationSource": {
+          "reference": "#source"
+        },
+        "dosage": [
+          {
+            "text": "Take twice a day",
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 250,
+                  "unit": "milligram",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:72ecd48d-d647-41fa-8e03-08a254d0a7db",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "72ecd48d-d647-41fa-8e03-08a254d0a7db",
+        "contained": [
+          {
+            "resourceType": "Organization",
+            "id": "manufacturer",
+            "name": "AstraZeneca"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1324681000000101",
+                  "display": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+                }
+              ],
+              "text": "Administration of first dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/immunisation",
+            "value": "dcf651b9-8763-424a-bea0-b4c29416049b"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39114911000001105",
+              "display": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+            }
+          ],
+          "text": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
+        },
+        "patient": {
+          "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+        },
+        "occurrenceDateTime": "2025-02-21T15:50:12.5621066+00:00",
+        "recorded": "2025-03-03T15:50:12.5621089+00:00",
+        "manufacturer": {
+          "reference": "#manufacturer"
         }
-    ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5bf334be-e2b9-4684-b40d-c1264a31c5b7",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "5bf334be-e2b9-4684-b40d-c1264a31c5b7",
+        "contained": [
+          {
+            "resourceType": "Organization",
+            "id": "manufacturer",
+            "name": "Pfizer-BioNTech"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "1324691000000104",
+                  "display": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+                }
+              ],
+              "text": "Administration of second dose of severe acute respiratory syndrome coronavirus 2 vaccine"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://test-nhs-scr-ips.com/immunisation",
+            "value": "769c2eaa-495d-4b11-b62d-7e3b34c8e24b"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "39115611000001103",
+              "display": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)"
+            }
+          ],
+          "text": "COVID-19 mRNA Vaccine BNT162b2 30micrograms/0.3ml dose concentrate for suspension for injection multidose vials (Pfizer-BioNTech)"
+        },
+        "patient": {
+          "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
+        },
+        "occurrenceDateTime": "2025-06-01T15:50:12.5702105+01:00",
+        "recorded": "2025-06-02T15:50:12.5702139+01:00",
+        "manufacturer": {
+          "reference": "#manufacturer"
+        }
+      }
+    }
+  ]
 }

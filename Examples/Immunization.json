@@ -1,12 +1,6 @@
 {
     "resourceType": "Immunization",
-    "id": "bee6d4bd-86d8-41ae-bd6d-6fa757114b74",
-    "meta": {
-        "profile": [
-            "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization",
-            "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
-        ]
-    },
+    "id": "72ecd48d-d647-41fa-8e03-08a254d0a7db",
     "contained": [
         {
             "resourceType": "Organization",
@@ -32,7 +26,7 @@
     "identifier": [
         {
             "system": "http://test-nhs-scr-ips.com/immunisation",
-            "value": "bee6d4bd-86d8-41ae-bd6d-6fa757114b74"
+            "value": "dcf651b9-8763-424a-bea0-b4c29416049b"
         }
     ],
     "status": "completed",
@@ -47,10 +41,10 @@
         "text": "COVID-19 Vaccine AstraZeneca (ChAdOx1 S [recombinant]) 5x10,000,000,000 viral particles/0.5ml dose solution for injection multidose vials (AstraZeneca)"
     },
     "patient": {
-        "reference": "urn:uuid:72ab37d0-b256-40ce-8b30-84719ed3711a"
+        "reference": "urn:uuid:92bf81ec-eed1-4105-ab1b-4e9ae84e4443"
     },
-    "occurrenceDateTime": "2024-06-03T16:13:55.9130709+01:00",
-    "recorded": "2024-06-13T16:13:55.9130767+01:00",
+    "occurrenceDateTime": "2025-02-21T15:50:12.5621066+00:00",
+    "recorded": "2025-03-03T15:50:12.5621089+00:00",
     "manufacturer": {
         "reference": "#manufacturer"
     }

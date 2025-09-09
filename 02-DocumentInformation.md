@@ -6,6 +6,8 @@ The table below provides details of how to populate key items from the urgent ca
 
 The composition is the overarching document which provides the context and groups the content into sections to represent the sections defined in the IPS specification.
 
+As the IPS is expected to be automatically generated using all relevant data, the "Period" should be populated with just an "End" datetime representing the datetime that the IPS was generated to make it clear that it represents data up to that point only.
+
  * Filters/Constraints: N/A
  * FHIR Resource Profiles to conform to:
    * [Composition (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips)
