@@ -1,0 +1,45 @@
+{
+    "resourceType": "Observation",
+    "id": "a8f0daeb-6802-4062-8d01-4fac5e23c808",
+    "identifier": [
+        {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                    "code": "PATH",
+                    "display": "Pathology"
+                }
+            ],
+            "text": "Pathology"
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+                "code": "CHM_SET_ISTUD2",
+                "display": "IRON STUDIES"
+            }
+        ],
+        "text": "IRON STUDIES"
+    },
+    "subject": {
+        "reference": "urn:uuid:02a03c25-a736-477f-8bb0-323e30688db7"
+    },
+    "effectiveDateTime": "2025-08-21T08:29:05.6587119+01:00",
+    "hasMember": [
+        {
+            "reference": "urn:uuid:b7d00dc1-ea7c-41b8-bd29-1e7d2d5d42c9"
+        },
+        {
+            "reference": "urn:uuid:f19177e9-adf4-492f-a969-dad50d5a1cb7"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "resourceType": "Procedure",
+    "id": "e9b15438-40ed-41fd-af16-d7bdb6d7e326",
+    "contained": [
+        {
+            "resourceType": "Practitioner",
+            "id": "prac1",
+            "name": [
+                {
+                    "text": "Dr Josephine Smith"
+                }
+            ]
+        },
+        {
+            "resourceType": "Organization",
+            "id": "org1",
+            "name": "ACME Hospital"
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://test-nhs-scr-ips.com/procedure",
+            "value": "da7b221e-15a9-49e2-b9ab-1099c6b0e821"
+        }
+    ],
+    "status": "completed",
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "442232002",
+                "display": "Monitoring of cardiac output using continuous oesophageal Doppler"
+            }
+        ],
+        "text": "Monitoring of cardiac output using continuous oesophageal Doppler"
+    },
+    "subject": {
+        "reference": "urn:uuid:77cd9578-4f71-4348-a613-203dcff4f213"
+    },
+    "performedDateTime": "2025-08-11T16:10:58.0574844+01:00",
+    "performer": [
+        {
+            "actor": {
+                "reference": "#prac1"
+            },
+            "onBehalfOf": {
+                "reference": "#org1"
+            }
+        }
+    ]
+}

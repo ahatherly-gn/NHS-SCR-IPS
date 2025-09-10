@@ -1,0 +1,59 @@
+{
+    "resourceType": "Observation",
+    "id": "f19177e9-adf4-492f-a969-dad50d5a1cb7",
+    "identifier": [
+        {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2-CHM_TEST_IRON"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                    "code": "PATH",
+                    "display": "Pathology"
+                }
+            ],
+            "text": "Pathology"
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+                "code": "CHM_TEST_IRON",
+                "display": "Iron"
+            }
+        ],
+        "text": "Iron"
+    },
+    "subject": {
+        "reference": "urn:uuid:02a03c25-a736-477f-8bb0-323e30688db7"
+    },
+    "effectiveDateTime": "2025-08-21T08:29:05.658651+01:00",
+    "valueQuantity": {
+        "value": 20.5,
+        "unit": "umol/L",
+        "system": "http://unitsofmeasure.org",
+        "code": "umol/L"
+    },
+    "referenceRange": [
+        {
+            "low": {
+                "value": 11.6,
+                "unit": "umol/L",
+                "system": "http://unitsofmeasure.org",
+                "code": "umol/L"
+            },
+            "high": {
+                "value": 31.3,
+                "unit": "umol/L",
+                "system": "http://unitsofmeasure.org",
+                "code": "umol/L"
+            }
+        }
+    ]
+}
