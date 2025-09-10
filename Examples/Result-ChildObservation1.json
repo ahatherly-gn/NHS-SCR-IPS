@@ -1,0 +1,71 @@
+{
+    "resourceType": "Observation",
+    "id": "b7d00dc1-ea7c-41b8-bd29-1e7d2d5d42c9",
+    "identifier": [
+        {
+            "system": "http://api.graphnethealth.com/ID/Pathology-T-123",
+            "value": "P,24.3253590.H-CHM_SET_ISTUD2-CHM_TEST_FERR"
+        }
+    ],
+    "status": "final",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "https://fhir.graphnethealth.com/CodeSystem-DiagnosticReportCategory",
+                    "code": "PATH",
+                    "display": "Pathology"
+                }
+            ],
+            "text": "Pathology"
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "https://fhir.graphnethealth.com/CodeSystem-LocalResultCodes-1233",
+                "code": "CHM_TEST_FERR",
+                "display": "Ferritin"
+            }
+        ],
+        "text": "Ferritin"
+    },
+    "subject": {
+        "reference": "urn:uuid:02a03c25-a736-477f-8bb0-323e30688db7"
+    },
+    "effectiveDateTime": "2025-08-21T08:29:05.6345733+01:00",
+    "valueQuantity": {
+        "value": 538,
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+    },
+    "interpretation": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                    "code": "H",
+                    "display": "High"
+                }
+            ],
+            "text": "High"
+        }
+    ],
+    "referenceRange": [
+        {
+            "low": {
+                "value": 15,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            },
+            "high": {
+                "value": 300,
+                "unit": "%",
+                "system": "http://unitsofmeasure.org",
+                "code": "%"
+            }
+        }
+    ]
+}

@@ -61,7 +61,11 @@ This will be a combination of results that are included in a DiagnosticReport (e
 
 **Example:**
 
-* Examples to be added
+* [Example FHIR Condition](Examples\Result-DiagnosticReport.json)
+* [Parent Observation](Examples\Result-ParentObservation.json)
+* [Child Observation 1](Examples\Result-ChildObservation1.json)
+* [Child Observation 2](Examples\Result-ChildObservation2.json)
+* [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Results.html)
 
 ## History of Procedures
 
@@ -76,7 +80,8 @@ This will be all Procedures in the record with a date in the past.
 
 **Example:**
 
-* Examples to be added
+* [Example FHIR Procedure](Examples\Procedure.json)
+* [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Procedures.html)
 
 ## Medical Devices
 *(this section is agreed)*

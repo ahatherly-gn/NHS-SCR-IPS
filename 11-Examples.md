@@ -12,15 +12,15 @@ Note: This example can be pasted into [this web site](https://www.ipsviewer.com/
 
 |Section | FHIR Resource(s)  | FHIR Example | Narrative Example |
 |--------|-----------|--------------|-------------------|
-| Document Information | Composition | [Example FHIR Composition](Examples/Composition.json) | [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Composition.html)
-| Patient | Patient | [Example FHIR Patient](Examples/Patient.json) | |
-| Author | Device | [Example FHIR Device](Examples/Author-Device.json) | |
-| Problems | Conditions | [Example FHIR Condition](Examples/Condition.json) | [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Problems.html) |
-| Allergies and Intolerances | AllergyIntolerance | [Example FHIR AllergyIntolerance](Examples/AllergyIntolerance.json) | [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Allergies.html) |
-| Medication Summary | MedicationStatement | [Example FHIR MedicationStatement](Examples/MedicationStatement.json) | [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Medications.html) |
-| Immunisations | Immunization | [Example FHIR Immunization](Examples/Immunization.json) | [Example HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Immunisations.html) |
-| Results | DiagnosticReport, Observation | | |
-| History of Procedures | Procedure | | |
+| Document Information | Composition | [Composition](Examples/Composition.json) | [HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Composition.html)
+| Patient | Patient | [Patient](Examples/Patient.json) | |
+| Author | Device | [Device](Examples/Author-Device.json) | |
+| Problems | Conditions | [Condition](Examples/Condition.json) | [HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Problems.html) |
+| Allergies and Intolerances | AllergyIntolerance | [AllergyIntolerance](Examples/AllergyIntolerance.json) | [HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Allergies.html) |
+| Medication Summary | MedicationStatement | [MedicationStatement](Examples/MedicationStatement.json) | [HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Medications.html) |
+| Immunisations | Immunization | [Immunization](Examples/Immunization.json) | [HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Immunisations.html) |
+| Results | DiagnosticReport, Observation | [DiagnosticReport](Examples\Result-DiagnosticReport.json) [Parent Observation](Examples\Result-ParentObservation.json) [Observation 1](Examples\Result-ChildObservation1.json) [Observation 2](Examples\Result-ChildObservation2.json) | [HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Results.html) |
+| History of Procedures | Procedure | [Procedure](Examples\Procedure.json) | [HTML Narrative](https://html-preview.github.io/?url=https://github.com/ahatherly-gn/NHS-SCR-IPS/blob/main/Examples/Narrative-Procedures.html) |
 | Medical Devices | Device | N/A | N/A |
 | Advance Directives | | | |
 | Functional Status | | | |
